@@ -1,0 +1,67 @@
+:root{
+    --bg:#FAF9F6;
+    --panel:#FFFFFF;
+    --ink:#2B3A42;
+    --ink-soft:#5B6B72;
+    --accent:#7C9885;
+    --line:#E4E1D8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Source Serif 4',serif;font-weight:600;letter-spacing:-0.01em;}
+  a{color:var(--accent);text-decoration:none;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header.hero{padding:88px 0 56px;border-bottom:1px solid var(--line);}
+  .hero-inner{display:flex;align-items:center;gap:36px;flex-wrap:wrap;}
+  .headshot{
+    width:132px;height:132px;border-radius:50%;
+    object-fit:cover;border:1px solid var(--line);flex-shrink:0;
+  }
+  .hero-text .eyebrow{
+    font-size:13px;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin-bottom:8px;
+  }
+  h1{font-size:38px;margin-bottom:6px;}
+  .title-line{font-size:18px;color:var(--ink-soft);}
+
+  section{padding:44px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{font-size:22px;margin-bottom:18px;}
+
+  .bio p{margin-bottom:14px;color:var(--ink-soft);max-width:640px;}
+
+  .grid-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;}
+  .grid-list div{
+    padding:10px 0;border-bottom:1px dashed var(--line);
+    font-size:15px;color:var(--ink-soft);
+  }
+  .grid-list strong{color:var(--ink);display:block;font-size:15px;margin-bottom:2px;}
+
+  .tags{display:flex;flex-wrap:wrap;gap:10px;}
+  .tag{
+    background:var(--panel);border:1px solid var(--line);
+    padding:7px 14px;border-radius:20px;font-size:14px;color:var(--ink);
+  }
+
+  .timeline-item{margin-bottom:20px;}
+  .timeline-item .when{font-size:13px;color:var(--accent);font-weight:600;letter-spacing:0.03em;}
+  .timeline-item .what{font-size:16px;font-weight:600;margin:2px 0 4px;}
+  .timeline-item .where{font-size:14px;color:var(--ink-soft);}
+
+  footer{padding:48px 0 80px;text-align:left;}
+  .contact-row{display:flex;gap:28px;flex-wrap:wrap;margin-top:14px;}
+  .contact-row a{font-size:15px;font-weight:500;border-bottom:1px solid var(--accent);}
+  .fine{margin-top:40px;font-size:12px;color:#9AA5A9;}
+
+  @media (max-width:600px){
+    .hero-inner{flex-direction:column;text-align:center;align-items:center;}
+    .grid-list{grid-template-columns:1fr;}
+    h1{font-size:30px;}
+  }
